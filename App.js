@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import Atletas from './api/CardAtleta';
+import DetalharAtleta from './api/DetalhamentoAtleta'
+import { createStaticNavigation } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const RootStack = createNativeStackNavigator({
+  screens: {
+    Home: DetalharAtleta,
+    Detalhamento: Atletas,
+  },
+});
+
+const Navigation = createStaticNavigation(RootStack);
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={{flex:1}}>
+      <Navigation />
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
