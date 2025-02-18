@@ -7,8 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const RootStack = createNativeStackNavigator({
   screens: {
-    Home: DetalharAtleta,
-    Detalhamento: Atletas,
+    Home: Atletas,
+    Detalhamento: DetalharAtleta,
   },
 });
 

@@ -24,7 +24,7 @@ function Atletas() {
         {
           headers: {
             'Content-Type': 'application/json',
-            'X-RapidAPI-Key': '465f8b9e8emsh2b147c379bf6e31p14f0bejsnc7473d2bdbd7',
+            'X-RapidAPI-Key': 'a86352a756msha65e7eb2793af2cp1274c9jsndeeb64aaf510',
             'X-RapidAPI-Host': 'basketball-head.p.rapidapi.com',
           },
         }
@@ -56,7 +56,7 @@ function Atletas() {
         {
           headers: {
             'Content-Type': 'application/json',
-            'X-RapidAPI-Key': '465f8b9e8emsh2b147c379bf6e31p14f0bejsnc7473d2bdbd7',
+            'X-RapidAPI-Key': 'a86352a756msha65e7eb2793af2cp1274c9jsndeeb64aaf510',
             'X-RapidAPI-Host': 'basketball-head.p.rapidapi.com',
           },
         }
